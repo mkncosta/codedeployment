@@ -13,4 +13,11 @@ public class DemoController {
 		mv.addObject("status","This is done by me");
 		return mv;
 	}
+	
+	@RequestMapping(value= {"/error"})
+	public ModelAndView errorRequest() {
+		ModelAndView mv = new ModelAndView("error");
+		mv.addObject("error","Error found..");
+		return mv;
+	}
 }
