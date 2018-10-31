@@ -23,6 +23,12 @@ public class TestDemoController {
 		Assert.assertEquals("error", mv.getViewName());
 	}
 	
+	@Test
+	public void testDemo() {
+		ModelAndView mv = demo.demoRequest();
+		Assert.assertEquals("demo", mv.getViewName());
+	}
+	
 
 
 }

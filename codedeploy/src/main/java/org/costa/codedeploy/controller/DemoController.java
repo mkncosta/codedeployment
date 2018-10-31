@@ -20,4 +20,11 @@ public class DemoController {
 		mv.addObject("error","Error found..");
 		return mv;
 	}
+	
+	@RequestMapping(value= {"/demo"})
+	public ModelAndView demoRequest() {
+		ModelAndView mv = new ModelAndView("demo");
+		mv.addObject("demo","Loading demo page.");
+		return mv;
+	}
 }
