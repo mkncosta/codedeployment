@@ -27,4 +27,11 @@ public class DemoController {
 		mv.addObject("demo","Loading demo page.");
 		return mv;
 	}
+	
+	@RequestMapping(value = {"/comingsoon"})
+	public ModelAndView comingSoonRequestControl() {
+		ModelAndView mv = new ModelAndView("soon");
+		mv.addObject("message", "These items will be available very soon. ");
+		return mv;
+	}
 }
