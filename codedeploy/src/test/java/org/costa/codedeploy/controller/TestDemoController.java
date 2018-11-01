@@ -11,6 +11,8 @@ public class TestDemoController {
 
 	DemoController demo = new DemoController();
 	
+	//Test commit.
+	
 	@Test
 	public void testHomeRequest() {
 		ModelAndView mv = demo.homeRequest();
